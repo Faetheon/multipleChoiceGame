@@ -1,3 +1,5 @@
-.div :nth-child(1) {
-  background-color: red;
+.menu-header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
 }
