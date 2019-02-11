@@ -1,12 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
+import MenuOption from './menuComponents/MenuOption.jsx';
 
-const MenuHeader = () => (
-  <div className='menu-header'>
-    <div>Test1</div>
-    <div>Test2</div>
-    <div>Test3</div>
-    <div>Test4</div>
-  </div>
-);
+function MenuHeader() {
+  const [menuOptionArr, setMenuOptionArr] = useState(['Home', 'Stories', 'About Me', 'Feedback']);
+  return (
+    <div className='menu-header'>
+      {
+        menuOptionArr.map((elem, i) => (
+          <MenuOption optionName={elem} key={i} />
+        ))
+      }
+    </div>
+  );
+};
 
 export default MenuHeader;
