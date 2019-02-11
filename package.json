@@ -1,0 +1,36 @@
+{
+  "name": "reactnativeapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:start": "nodemon server/index.js",
+    "dev:build": "webpack -d -w",
+    "prod:build": "webpack -p -w",
+    "prod:start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faetheon/reactNativeApp.git"
+  },
+  "author": "Nathan Hill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Faetheon/reactNativeApp/issues"
+  },
+  "homepage": "https://github.com/Faetheon/reactNativeApp#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "webpack-cli": "^3.2.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "node": "^11.9.0"
+  }
+}
