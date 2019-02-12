@@ -3,3 +3,13 @@
   width: 100vw;
   justify-content: space-around;
 }
+
+.selected-story {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.choice {
+  border: 1px solid black;
+}
