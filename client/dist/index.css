@@ -2,14 +2,28 @@
   display: flex;
   width: 100vw;
   justify-content: space-around;
+  user-select: none;
 }
 
 .selected-story {
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 
 .choice {
+  margin-top: 10px;
   border: 1px solid black;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.prelude {
+  margin: 20px 0;
+}
+
+.Stories {
+  cursor: pointer;
 }
