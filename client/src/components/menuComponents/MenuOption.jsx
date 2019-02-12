@@ -1,7 +1,7 @@
 import React from 'react';
 
-const MenuOption = ({optionName}) => (
-  <div className={`${optionName}`}>{optionName}</div>
+const MenuOption = ({optionName, updateCurrentStory}) => (
+  <div className={`${optionName}`} onClick={() => {updateCurrentStory ? updateCurrentStory('A Walk In The Woods') : null}}>{optionName}</div>
 );
 
 export default MenuOption;
